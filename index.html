@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Aaradhya!</title>
+  <!-- Free Google Fonts. If offline, the fallback fonts are used automatically. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,400&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts and stars are added here by script.js -->
+  <div id="floaters" aria-hidden="true"></div>
+  <!-- Confetti is drawn on this canvas -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- 1. WELCOME SCREEN -->
+  <section id="welcome" class="screen">
+    <svg class="cake" viewBox="0 0 120 120" aria-hidden="true">
+      <ellipse cx="60" cy="108" rx="48" ry="6" fill="#e9d3f2"/>
+      <rect x="18" y="70" width="84" height="36" rx="10" fill="#f7a8c4"/>
+      <rect x="28" y="46" width="64" height="28" rx="9" fill="#fff3dc"/>
+      <path d="M18 80c10 10 14-6 24 2s14-8 24 2 14-8 24 2 8-2 12-4v-12H18z" fill="#fff3dc"/>
+      <rect x="57" y="26" width="6" height="22" rx="3" fill="#b99bf0"/>
+      <!-- Candle flame (flickers with CSS) -->
+      <path class="flame" d="M60 8c8 8 7 15 0 18-7-3-8-10 0-18z" fill="#e8b94f"/>
+    </svg>
+    <h1 class="title">A Special Day<br>for Aaradhya</h1>
+    <p class="sub">Something small, made just for you.</p>
+    <button id="openBtn" class="btn">Open Your Surprise</button>
+  </section>
+
+  <!-- Everything below stays hidden until the button is clicked -->
+  <main id="main" hidden>
+
+    <!-- 2. BIRTHDAY MESSAGE -->
+    <section class="block message">
+      <h2>Dear Aaradhya,</h2>
+      <p>Happy Birthday! Thanks for doing Bakchodi with us and being a great friend. I hope this year brings you loads of happiness, success in everything you try, laughter that makes your cheeks hurt, and memories you will smile about for years.</p>>
+      <p>I wish you a very happy birthday and hope you have a great year ahead. I hope you have a great year ahead and you achieve all your goals.</p>
+      <p class="sign">-SACHIN</p>
+    </section>
+
+    <!-- 3. PHOTO MEMORIES (exactly 4 slots) -->
+    <section class="block">
+      <h2>Little Memories</h2>
+      <div class="gallery">
+        <figure class="photo">
+          <img src="images/photo1.webp" alt="Aaradhya, photo 1" loading="lazy">
+          <figcaption>Smiles that light up the classroom</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/photo2.webp" alt="Aaradhya, photo 2" loading="lazy">
+          <figcaption>Always up for a good laugh</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/photo3.webp" alt="Aaradhya, photo 3" loading="lazy">
+          <figcaption>Best company on a busy school day</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/photo4.webp" alt="Aaradhya, photo 4" loading="lazy">
+          <figcaption>A memory worth keeping</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4. BIRTHDAY SURPRISE -->
+    <section class="block surprise">
+      <h2>One More Thing</h2>
+      <button id="surpriseBtn" class="btn">Click for a Surprise</button>
+      <div id="surpriseMsg" class="reveal" aria-live="polite">
+        <p>You are kind, funny and truly fun to be around. Never stop being exactly who you are. Here is to a year full of good grades, good friends and great days!</p>
+      </div>
+    </section>
+
+    <!-- 5. FINAL WISHES -->
+    <section class="block final">
+      <h2 class="big">Happy 16th Birthday, Aaradhya!</h2>
+      <p>14 November 2026</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
